@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+
+body {
+  background: url('https://images.unsplash.com/photo-1498522271744-cdd435c13f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1954&q=80') bottom center no-repeat fixed / cover;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+body:not(.user-is-tabbing) button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: hsl(0, 0%, 40%);
+}
+
+#pomodoro {
+  margin: 50px;
+}
+
+#main-wrapper {
+  width: 10%;
+  margin: 0 auto;
+}
+
+#main-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+#time-left {
+  font-weight: 300;
+  font-size: 200px;
+  text-align: center;
+  justify-self: end;
+}
+
+#controls {
+  display: grid;
+  justify-self: start;
+}
+
+#controls button {
+  padding: 10px;
+  font-size: 50px;
+  border: none;
+  background: transparent;
+}
+
+#start_stop {
+  align-self: end;
+}
+
+#reset {
+  align-self: start;
+}
+
+#set-durations {
+  display: grid;
+  grid-column-gap: 70px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#session {
+  justify-self: end;
+}
+
+#break {
+  justify-self: start;
+}
+
+#break-label, #session-label {
+  text-align: center;
+  font-size: 20px;
+}
+
+.set-duration {
+  font-size: 40px; 
+  display: flex;
+  justify-content: center;
+}
+
+.set-duration button {
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+#break-length, #session-length {
+  line-height: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+
